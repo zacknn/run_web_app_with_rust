@@ -1,3 +1,8 @@
-fn main() {
-    println!("Hello, world!");
+mod app;
+mod bash;
+mod ui;
+mod input;
+
+fn () {
+    
 }
