@@ -1,6 +1,6 @@
 use std::process::Command;
 
-pub fn lunch_app(url: &str) {
+pub fn launch_app(url: &str) {
     Command::new("bash")
         .arg("scripts/lunch.sh")
         .arg(url)
