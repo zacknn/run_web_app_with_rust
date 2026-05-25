@@ -42,6 +42,9 @@ impl App {
 
     pub fn reload(&mut self) {
         self.apps = load_apps();
+        if self.selected >= self.apps.len() {
+            self.selected = self.apps.len().saturating_sub(1);
+        }
     }
 
     pub fn toggle_show_all(&mut self) {
